@@ -4,7 +4,6 @@ yeah
 #Set up:
 1. `pip install random`
 2. `pip install string`
-3. `pip install os`
 4. `pip install tqdm`
 5. `pip install ctypes`
 6. `pip install time`
