@@ -1,4 +1,5 @@
-import random, string
+import random
+import string
 from os import system
 import time
 from tqdm import tqdm
@@ -9,23 +10,24 @@ import replit
 import random
 import sys
 import pyfiglet
+import geocoder
 import colorama
 from colorama import Fore, Back, Style
 colorama.init()
-ctypes.windll.kernel32.SetConsoleTitleW("ddoxer")
+ctypes.windll.kernel32.SetConsoleTitleW("SkyBlock Doxer")
 print(f"{Fore.BLUE}")
 
 
-nigger = pyfiglet.figlet_format("Ddoxing tool")
-print(nigger)
-time.sleep(2)
+trolldeo = pyfiglet.figlet_format("SkyBlock Doxer")
+print(trolldeo)
 print("")
 time.sleep(0.5)
-print("Follow instructions to commence ddox \n")
+print("Follow instructions\n")
 time.sleep(0.2)
 print(f"{Fore.RED}")
 
-input('Name of person to ddox: ')
+uname = input('Username: ')
+
 
 def choose_word():
     list_of_words = []
@@ -33,199 +35,153 @@ def choose_word():
         line = f.readline().strip()
         while line:
             list_of_words.append(line)
-            line=f.readline().strip()
+            line = f.readline().strip()
     chosen_word = random.choice(list_of_words)
-    return chosen_word
+    print("Address:", chosen_word)
+    time.sleep(3)
+    print("==========================")
 
-def main():
-    print(choose_word())
 
-main()
+choose_word()
 
-print("finding persons age:")
-time.sleep(2)
-print(random.randint(10, 20))
+print("Age", random.randint(1, 18))
+print("==========================")
+time.sleep(3)
 
-print("checking databases breaches:")
-time.sleep(0.3)
-print("found leak")
-time.sleep(0.3)
-print("unhashing")
-
-import time
-for i1 in tqdm(range(1)):
-    for i2 in tqdm(range(300), leave=False):
-        # do something, e.g. sleep
-        time.sleep(0.01)
-
-print("passwords found")
-print("sending passwords from server in 5 seconds")
+print("Username:", uname)
+print("==========================")
+time.sleep(3)
 
 
 def choose_word():
     list_of_words = []
-    with open('nigga.txt') as f:
+    with open('funny.txt') as f:
         line = f.readline().strip()
         while line:
             list_of_words.append(line)
-            line=f.readline().strip()
+            line = f.readline().strip()
     chosen_word = random.choice(list_of_words)
-    return chosen_word
+    print("PornHub Username: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
 
-def main():
-    print(choose_word())
 
-main()
+choose_word()
 
-   
 
-print("Finding Ip")
+def choose_word():
+    list_of_words = []
+    with open('yeah.txt') as f:
+        line = f.readline().strip()
+        while line:
+            list_of_words.append(line)
+            line = f.readline().strip()
+    chosen_word = random.choice(list_of_words)
+    print("Logged Into Computer, Password: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
 
-import time
-for i1 in tqdm(range(1)):
-    for i2 in tqdm(range(100), leave=False):
-        # do something, e.g. sleep
-        time.sleep(0.01)
 
-ip = ".".join(map(str, (random.randint(0, 255) 
+choose_word()
+
+ip = ".".join(map(str, (random.randint(0, 255)
                         for _ in range(4))))
 
-print(ip)
-time.sleep(1)
-
-print("finding relatives names")
+print("Ip Address:", ip)
+print("==========================")
+time.sleep(3)
 
 
 def choose_word():
     list_of_words = []
-    with open('niggas.txt') as f:
+    with open('yesss.txt') as f:
         line = f.readline().strip()
         while line:
             list_of_words.append(line)
-            line=f.readline().strip()
+            line = f.readline().strip()
     chosen_word = random.choice(list_of_words)
-    return chosen_word
+    print("Name: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
 
-def main():
-    print(choose_word())
 
-main()
-
-print("found name")
-print("finding other names")
 def choose_word():
     list_of_words = []
-    with open('niggas.txt') as f:
+    with open('yesss.txt') as f:
         line = f.readline().strip()
         while line:
             list_of_words.append(line)
-            line=f.readline().strip()
+            line = f.readline().strip()
     chosen_word = random.choice(list_of_words)
-    return chosen_word
+    print("Mom's name: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
 
-def main():
-    print(choose_word())
 
-main()
-print("found name")
-print("finding other names")
+choose_word()
+
+
 def choose_word():
     list_of_words = []
-    with open('niggas.txt') as f:
+    with open('yesss.txt') as f:
         line = f.readline().strip()
         while line:
             list_of_words.append(line)
-            line=f.readline().strip()
+            line = f.readline().strip()
     chosen_word = random.choice(list_of_words)
-    return chosen_word
+    print("Dad's name: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
 
-def main():
-    print(choose_word())
 
-main()
+choose_word()
 
+g = geocoder.ip('me')
+print("Current GPS Location: ", g.latlng)
+print("==========================")
+time.sleep(3)
+
+print("Getting Swat Teams Ready!")
 time.sleep(5)
 
 replit.clear()
-num=input("amount of swat teams to send: ")
+num = input("amount of swat teams to send: ")
 
 print("swat teams being sent")
 
 
-
-
-
-
 replit.clear()
+print("Getting Pizza Ready!")
+time.sleep(3)
 
 input("How many pizzas to send: ")
 print("pizzas sent")
 
 replit.clear()
 
-print("""
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/////
-,                                                                          .,,,,
-,                                                                               
-,                                                                               
-,                                                                               
-,                                           .......                             
-,                                   .*#%%&&&%%&&&&&&&%&&%#*.                    
-,                               .(&&%%/,                ,(#%&%/.                
-,                            .(&%%/...                      ./%%%(.             
-,                          ,%%%(,,,*,*,,....................   .(%&#,           
-,                        .#%%##%%%%%%%%####/,,,,,,,,,,,,,*//(((((#%%&#.         
-,                       *%&%%/*//////((%&@@@&&#****,*#%&&&&&&&&&%%##&%%*        
-,                      *&&%%#////(/,......./&@@@#**%@@@&(,...,*****(%&&&/       
-,                     .&&%%%#((((,.     .*****#@@(&@@(.       ..*(/(%%&&%,      
-,              *//*.  #&&%%%%###*     *%****/(%,*#*,((*,/(%*    ./##%%&&&(.     
-,            .#//((#..#&%%%%%%%&/    .#*%@@@@(#(,%,/,&@@@&##,   ./%&%%&&&%.     
-,            *%%%%%# .%&&%%%%%%%%*.   *(*#&#,(#*#%%*,*%&%*#(  ..*%%%%%%&&%.     
-,         . ./%#%%%(..#&&&%%%%%%%%&(,....,*,,/%%##%%%/***,...,*%&%%%%%&&&#.     
-,  ./(*(%%%%%%%%%%%*  *&&&%%%%%%%%%%&&&&&&&&%%%######%&&&&&&&&%%%%%%%%&&&*      
-, ,%&&&%%%%%%#%%&%%/   (%&%%%%%%%%%%%%%%%%%%%%%#########%%%%%%%%%%%%%&&&#       
-, /&%%%%%%%%/*(##%%%&%(.(&&&%%%%%%%%%%&%#(((#((%&%%%%%%%%%%%%%%%%%%&&&&(        
-, *&%%#%#%#(%%//(#%%%&&# *&&&%%%%%%&#/*,**,,,.. .,.*%&&%&&&&&&%&%%&&&&*         
-, .%%/*/%(/*%%%#%%%%%%#.  .#&&&&%&&%(/,,*,,,...    ....,,**,/(#&&&&&(           
-,  ,&&&&&&&%%%%%%%%%%,       /&&&&&&&%%%%%%%%%%%%%%%%%%%%%%&&&&&&&/             
-,    *%(//((##%%%&%(           .#&&&%&&&&&&&&&&&&%&&&&&&&&&&&&&(.               
-,        ,*****,,.  ....,,,***////(#%&&&&&&&&&&&&&&&&&&&&&&%#(////***,,,....    
-,                    ...,,,****////((((###%%%%&&&&%%%%###((((///*****,,....     
-,                                  .........,,,,,,,,,,,...... .                 
-,                                                                               
-,                                                                               
-,                                                                               
-
-
-
-
-""")
+print("Beamed By Guid H")
 time.sleep(1)
-string = "Ddox done" 
+string = "Trolling Complete"
 
 for letter in string:
-  sleep(0.01)
-  sys.stdout.write(letter)
-  sys.stdout.flush()
+    sleep(0.01)
+    sys.stdout.write(letter)
+    sys.stdout.flush()
 
 time.sleep(2)
 
-string = "\n swat team and pizzas sent" 
+string = "\n swat team and pizzas sent"
 
 for letter in string:
-  sleep(0.01)
-  sys.stdout.write(letter)
-  sys.stdout.flush()
+    sleep(0.01)
+    sys.stdout.write(letter)
+    sys.stdout.flush()
 
 
 time.sleep(2)
 
 replit.clear()
-print("program ending")
+print("SkyBlock Doxer ending")
 time.sleep(5)
-print("goodbye nigga")
+print("Good Night")
 time.sleep(1)
-
-
-
-
