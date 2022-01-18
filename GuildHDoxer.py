@@ -4,7 +4,6 @@ from os import system
 import time
 from tqdm import tqdm
 import ctypes
-import socket
 from time import sleep
 import replit
 import random
@@ -44,7 +43,7 @@ def choose_word():
 
 choose_word()
 
-print("Age", random.randint(1, 18))
+print("Age", random.randint(1, 99))
 print("==========================")
 time.sleep(3)
 
@@ -83,6 +82,36 @@ def choose_word():
 
 
 choose_word()
+
+
+def choose_word():
+    list_of_words = []
+    with open('tokens.txt') as f:
+        line = f.readline().strip()
+        while line:
+            list_of_words.append(line)
+            line = f.readline().strip()
+    chosen_word = random.choice(list_of_words)
+    print("Discord Token: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
+
+
+choose_word()
+
+
+def choose_word():
+    list_of_words = []
+    with open('virgin.txt') as f:
+        line = f.readline().strip()
+        while line:
+            list_of_words.append(line)
+            line = f.readline().strip()
+    chosen_word = random.choice(list_of_words)
+    print(f"Is {uname} a virgin? ", chosen_word)
+    print("==========================")
+    time.sleep(3)
+
 
 ip = ".".join(map(str, (random.randint(0, 255)
                         for _ in range(4))))
@@ -136,6 +165,42 @@ def choose_word():
 
 choose_word()
 
+print("Weight: ", random.randint(80, 450), "pounds")
+print("==========================")
+time.sleep(3)
+
+
+def choose_word():
+    list_of_words = []
+    with open('hights.txt') as f:
+        line = f.readline().strip()
+        while line:
+            list_of_words.append(line)
+            line = f.readline().strip()
+    chosen_word = random.choice(list_of_words)
+    print("Height: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
+
+
+choose_word()
+
+
+def choose_word():
+    list_of_words = []
+    with open('grades.txt') as f:
+        line = f.readline().strip()
+        while line:
+            list_of_words.append(line)
+            line = f.readline().strip()
+    chosen_word = random.choice(list_of_words)
+    print("Grade Average: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
+
+
+choose_word()
+
 g = geocoder.ip('me')
 print("Current GPS Location: ", g.latlng)
 print("==========================")
@@ -154,7 +219,7 @@ replit.clear()
 print("Getting Pizza Ready!")
 time.sleep(3)
 
-input("How many pizzas to send: ")
+pamnt = input("How many pizzas to send: ")
 print("pizzas sent")
 
 replit.clear()
@@ -170,7 +235,7 @@ for letter in string:
 
 time.sleep(2)
 
-string = "\n swat team and pizzas sent"
+string = f"\nSuccess!  {num} swat teams have been sent and {pamnt} pizzas have been ordered"
 
 for letter in string:
     sleep(0.01)
@@ -185,3 +250,4 @@ print("SkyBlock Doxer ending")
 time.sleep(5)
 print("Good Night")
 time.sleep(1)
+print("good morning overlisted")
