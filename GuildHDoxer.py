@@ -215,11 +215,6 @@ if swat_team in ('y', 'Y', 'Yes', 'yes', 'yEs', 'YES', 'YEs', 'yES', 'yeS'):
     print(f"{num} swat teams being sent")
     print(f"{pamnt} pizzas sent")
     string = f"\nSuccess!  {num} swat teams have been sent and {pamnt} pizzas have been ordered || Trolling Complete"
-
-    for letter in string:
-        sleep(0.01)
-        sys.stdout.write(letter)
-        sys.stdout.flush()
 else:
     print("Beamed By Guild H")
 
