@@ -43,7 +43,7 @@ def choose_word():
 
 choose_word()
 
-print("Age", random.randint(1, 99))
+print("Age", random.randint(1, 28))
 print("==========================")
 time.sleep(3)
 
@@ -206,27 +206,22 @@ print("Current GPS Location: ", g.latlng)
 print("==========================")
 time.sleep(3)
 
-print("Getting Swat Teams Ready!")
-time.sleep(5)
+swat_team = input("[?] Would you like to send pizza & swat teams [Y/N] ")
+if swat_team in ('y', 'Y', 'Yes', 'yes', 'yEs', 'YES', 'YEs', 'yES', 'yeS'):
+    print("Getting Swat Teams Ready!")
+    time.sleep(3)
+    num = input("amount of swat teams to send: ")
+    pamnt = input("How many pizzas to send: ")
+    print(f"{num} swat teams being sent")
+    print(f"{pamnt} pizzas sent")
+    string = f"\nSuccess!  {num} swat teams have been sent and {pamnt} pizzas have been ordered || Trolling Complete"
 
-replit.clear()
-num = input("amount of swat teams to send: ")
-
-print("swat teams being sent")
-
-
-replit.clear()
-print("Getting Pizza Ready!")
-time.sleep(3)
-
-pamnt = input("How many pizzas to send: ")
-print("pizzas sent")
-
-replit.clear()
-
-print("Beamed By Guid H")
-time.sleep(1)
-string = "Trolling Complete"
+    for letter in string:
+        sleep(0.01)
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+else:
+    print("Beamed By Guild H")
 
 for letter in string:
     sleep(0.01)
@@ -235,19 +230,11 @@ for letter in string:
 
 time.sleep(2)
 
-string = f"\nSuccess!  {num} swat teams have been sent and {pamnt} pizzas have been ordered"
-
-for letter in string:
-    sleep(0.01)
-    sys.stdout.write(letter)
-    sys.stdout.flush()
-
 
 time.sleep(2)
 
-replit.clear()
+print(" ")
+print(" ")
 print("SkyBlock Doxer ending")
 time.sleep(5)
 print("Good Night")
-time.sleep(1)
-print("good morning overlisted")
