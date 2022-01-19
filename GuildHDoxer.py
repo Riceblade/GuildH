@@ -43,6 +43,22 @@ def choose_word():
 
 choose_word()
 
+
+def choose_word():
+    list_of_words = []
+    with open('yesss.txt') as f:
+        line = f.readline().strip()
+        while line:
+            list_of_words.append(line)
+            line = f.readline().strip()
+    chosen_word = random.choice(list_of_words)
+    print("Name: ", chosen_word)
+    print("==========================")
+    time.sleep(3)
+
+
+choose_word()
+
 print("Age", random.randint(1, 28))
 print("==========================")
 time.sleep(3)
@@ -111,6 +127,9 @@ def choose_word():
     print(f"Is {uname} a virgin? ", chosen_word)
     print("==========================")
     time.sleep(3)
+
+
+choose_word()
 
 
 ip = ".".join(map(str, (random.randint(0, 255)
@@ -208,11 +227,11 @@ time.sleep(3)
 
 swat_team = input("[?] Would you like to send pizza & swat teams [Y/N] ")
 if swat_team in ('y', 'Y', 'Yes', 'yes', 'yEs', 'YES', 'YEs', 'yES', 'yeS'):
-    print("Getting Swat Teams Ready!")
+    print("Getting Swat Teams & Pizza Ready!")
     time.sleep(3)
     num = input("amount of swat teams to send: ")
     pamnt = input("How many pizzas to send: ")
-    print(f"{num} swat teams being sent")
+    print(f"{num} swat teams sent")
     print(f"{pamnt} pizzas sent")
     string = f"\nSuccess!  {num} swat teams have been sent and {pamnt} pizzas have been ordered || Trolling Complete"
 else:
